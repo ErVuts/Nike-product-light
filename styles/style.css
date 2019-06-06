@@ -98,13 +98,42 @@ header {
 .gallery {
 	font-size: 15px;
 	display:inline-block;
-	width:60%;
+	width:65%;
 	height: 100%;
+	position:relative;
 	background-color:#f4f4f4;
+}
+
+.gallery__bg {
+	position:absolute;
+	top:20%;
+	left:2%;
+}
+
+.gallery__img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index:1;
+}
+
+.btns {
+	position:absolute;
+	top:86%;
+	left:30%;
+}
+
+.btn-2 {
+	margin-right:20px;
+	margin-left: 20px;
 }
 
 .info {
 	font-size: 15px;
 	display:inline-block;
-	width:40%;
+	width:35%;
 }
+
+
+
