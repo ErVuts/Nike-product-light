@@ -8,43 +8,45 @@
 	<title>THE RUNNING HAS JUST BEGUN</title>
 </head>
 <body>
-	<header>
-		
-		<a href="#" class="header__logo">
-			<img src="img/logo.png" alt="Nike">
-		</a>
-		<nav class="navigaton">
-			<a href="#" class="navigation__title">Lifestyle</a>
-			<a href="#" class="navigation__title navigation__title--active">Running</a>
-			<a href="#" class="navigation__title">Football</a>
-			<a href="#" class="navigation__title">Skateboarding</a>
-		</nav>
-		<img src="img/menu.svg" class="menu">
-	</header>
-	
-	<main>
-		<div class="first-bg"></div>
-		<div class="second-bg"></div>
+	<div class="container">
+		<header class="heading">
+			<img src="img/logo.png" alt="" class=" heading__logo">
+			<ul class="heading__navigation">
+				<li><a class="heading__links" href="#">Lifestyle</a></li> 
+				<li><a class="heading__links heading__links--active" href="#">Running</a></li>
+				<li><a class="heading__links" href="#">Football</a></li>
+				<li><a class="heading__links" href="#">Skateboarding</a></li>
+			</ul>
+		</header>
 
-		<div class="card">
-			<div class="gallery">
-				<img src="img/bg_title.png" class="gallery__bg">
-				<img src="img/img_h.png" class="gallery__img">
-				<div class="btns">
-					<a href="#" class="btn-1"><img src="img/img-3.png" class="btn__img"></a>
-					<a href="#" class="btn-2">						<img src="img/img-2.png" class="btn__img"></a>
-					<a href="#" class="btn-3"><img src="img/img-1.png" class="btn__img">
-					</a>
-
+		<main>
+			<div class="product__card">
+			<div class="product__gallery">
+				<span class="gallery__title">Huarache</span>
+				<img class="product__img" src="img/img_h.png">
+				<div class="product__choice">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/img-1.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/img-2.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/img-3.png" alt="">
+							</a>
+						</li>
+					</ul>
 				</div>
-
 			</div>
-			<div class="info">
-		
-			</div>
-
-		</div>
-
-	</main>
+			<div class="product__info"></div>
+	</div>
+		</main>
+	</div>
 </body>
 </html>
