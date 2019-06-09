@@ -26,6 +26,18 @@ body {
 	width:90%;
 }
 
+.heading__logo {
+	transition: opacity .4s linear;
+}
+
+.heading__logo:hover,
+.heading__logo:focus,
+.heading__logo:active {
+	opacity: .7;
+}
+
+
+
 .heading__navigation {
 	list-style-type:none;
 	display:inline-block;
