@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400, 700|Roboto:300,400,700|&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -56,6 +56,7 @@ body {
 	min-height: 430px;
 	background-color: #FFF;
 	position:relative;
+	font-size: 0;
 
 }
 
@@ -82,7 +83,8 @@ body {
 }
 
 .product__gallery {
-	width:65%;
+	display:inline-block;
+	width:60%;
 	min-height: 430px;
 	background-image: url(../img/bg.png), linear-gradient(to top, #f4f4f4, #edeaec);
 	background-repeat:no-repeat;
@@ -98,7 +100,7 @@ body {
 	
 }
 
-.product__title {
+.gallery__title {
 	display:inline;
 	font-family: 'Roboto';
 	font-size: 83px;
@@ -127,6 +129,158 @@ body {
 	display:inline-block;
 	padding-left:10px	
 }
+
+.product__info {
+	display:inline-block;
+	position:absolute;
+	margin-left: 31px;
+}
+
+
+
+.product__label {
+	width: 42px;
+	height: 25px;
+	background-color: #ffa60d;
+	font-size: .9rem;
+	font-family: 'Roboto';
+	font-weight: 400;
+	text-transform:uppercase;
+	text-align:center;
+	padding-top: 5px;
+	color: #FFF;
+	margin-top: 45px;
+}
+
+span {
+	color:#5e4fff
+}
+
+.product__size {
+	list-style-type:none;
+}
+
+.product__title {
+	font-family: Roboto Condensed;
+	font-weight: 400;
+	font-size: 2rem;
+	margin-top: 12px;
+}
+
+.product__rate {
+	font-size: 1px;
+	display:inline-block;	
+	width: 65px;
+	height: 30px;
+}
+
+.rate__title {
+	display:inline-block;
+	font-size: .9rem;
+	font-family: Roboto Condensed;
+	margin: 0;
+	
+}
+
+.product__stars {
+	display:inline-block;
+	position:absolute;
+	padding-left: 15px;
+	margin: 0;
+}
+
+.product__star {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE5LjQ4MSAxOS40ODEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE5LjQ4MSAxOS40ODEiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CiAgPGc+CiAgICA8cGF0aCBkPSJtMTAuMjAxLC43NThsMi40NzgsNS44NjUgNi4zNDQsLjU0NWMwLjQ0LDAuMDM4IDAuNjE5LDAuNTg3IDAuMjg1LDAuODc2bC00LjgxMiw0LjE2OSAxLjQ0Miw2LjIwMmMwLjEsMC40MzEtMC4zNjcsMC43Ny0wLjc0NSwwLjU0MWwtNS40NTItMy4yODgtNS40NTIsMy4yODhjLTAuMzc5LDAuMjI4LTAuODQ1LTAuMTExLTAuNzQ1LTAuNTQxbDEuNDQyLTYuMjAyLTQuODEzLTQuMTdjLTAuMzM0LTAuMjg5LTAuMTU2LTAuODM4IDAuMjg1LTAuODc2bDYuMzQ0LS41NDUgMi40NzgtNS44NjRjMC4xNzItMC40MDggMC43NDktMC40MDggMC45MjEsMHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=)
+
+}
+
+[data-stars="4"] .product__star:nth-child(n+5),
+[data-stars="3"] .product__star:nth-child(n+4),
+[data-stars="2"] .product__star:nth-child(n+3),
+[data-stars="1"] .product__star:nth-child(n+2),
+[data-stars="0"] .product__star:nth-child(n+1) {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxOS40ODEgMTkuNDgxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxOS40ODEgMTkuNDgxIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+CiAgICA8cGF0aCBkPSJtMTAuMjAxLC43NThsMi40NzgsNS44NjUgNi4zNDQsLjU0NWMwLjQ0LDAuMDM4IDAuNjE5LDAuNTg3IDAuMjg1LDAuODc2bC00LjgxMiw0LjE2OSAxLjQ0Miw2LjIwMmMwLjEsMC40MzEtMC4zNjcsMC43Ny0wLjc0NSwwLjU0MWwtNS40NTItMy4yODgtNS40NTIsMy4yODhjLTAuMzc5LDAuMjI4LTAuODQ1LTAuMTExLTAuNzQ1LTAuNTQxbDEuNDQyLTYuMjAyLTQuODEzLTQuMTdjLTAuMzM0LTAuMjg5LTAuMTU2LTAuODM4IDAuMjg1LTAuODc2bDYuMzQ0LS41NDUgMi40NzgtNS44NjRjMC4xNzItMC40MDggMC43NDktMC40MDggMC45MjEsMHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0FDQTlBOSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD4KICA8L2c+PC9nPiA8L3N2Zz4=)
+}
+
+.product__price {
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 1.8rem;
+	margin: 0;
+}
+
+.product__size {
+	display:inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.size__title {
+	font-family: Roboto;
+	font-size: .8rem;
+	margin: 25px 0 10px 0;
+}
+
+.size__select {
+	font-family: Roboto Condensed;
+	font-size: 1.3rem;
+	display:inline;
+	margin-right:35px;
+}
+
+.size__select a {
+	text-decoration:none;
+	color:black
+}
+
+.size__select--pick {
+	border:1px solid black;
+	padding-left: 3px;
+}
+
+.product__buttons {
+	margin-top: 30px;
+}
+
+.product__purchase {
+	background-color: #a200b8;
+	color:#fff;
+	padding-top: 8px;
+}
+
+.product__wishlist {
+	background-color:#fff;
+	border:1px solid #000;
+	font-weight: 700;
+	color:#000;
+	margin-top: 5px;
+}
+
+.product__purchase,
+.product__wishlist {
+	height: 30px;
+	width: 120px;
+	display:block;
+	font-family: Roboto Condensed;
+	font-size: .8rem;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	padding-top: 8px;
+}
+
+
+
+
+
+
+
 
 
 
