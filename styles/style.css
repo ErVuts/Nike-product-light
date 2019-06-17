@@ -21,45 +21,57 @@ body {
 }
 
 .container {
-	margin: 25px auto;
+	margin: 10px auto;
 	max-width:751px;
 	width:90%;
 }
 
-.heading__logo {
+.logo {
 	transition: opacity .4s linear;
 }
 
-.heading__logo:hover,
-.heading__logo:focus,
-.heading__logo:active {
+.logo:hover,
+.logo:focus,
+.logo:active {
 	opacity: .7;
 }
 
 
 
-.heading__navigation {
+.menu {
 	list-style-type:none;
 	display:inline-block;
 }
 
-.heading__links {
+.menu__item {
 	display:inline;
 	margin-left: 48px;
+	
 }
 
-.heading__link {
+.menu__link {
 	font-family: 'Roboto';
 	font-weight: 300;
 	font-size: 1rem;
 	color:#fff;
 	text-decoration:none;
 	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 5px;
 }
-.heading__links--active {
+.menu__link--active {
 	border-bottom: 1px solid #fff;
 	padding-bottom: 5px;
 }
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
+}
+
+
 
 .product__card {
 	margin-top: 60px;
